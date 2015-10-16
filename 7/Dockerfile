@@ -9,4 +9,5 @@ RUN echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu vivid main"     |
       oracle-java7-installer \
       oracle-java7-set-default \
       ca-certificates \
-      curl
+      curl && \
+    rm -rdf /var/cache/oracle-jdk7-installer /usr/lib/jvm/java-7-oracle/src.zip
